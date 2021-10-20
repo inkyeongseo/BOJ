@@ -10,9 +10,9 @@ public class Main {
 		for(int i = 0; i < n; i++) {
 			arr[i] = sc.nextInt();
 		}
-		int b = sc.nextInt();
-		int c = sc.nextInt();
-		long count = 0;
+		int b = sc.nextInt(); //총감독관
+		int c = sc.nextInt(); //부감독관
+		long count = 0; // 시험장의 수 * 응시자 수를 하면 1조 이상인 경우가 있으므로 long 타입
 		for(int j = 0; j < n; j++) {
 			count++;
 			arr[j] -= b;
